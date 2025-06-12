@@ -1,0 +1,40 @@
+.container {
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(41, 115, 184, 0.1);
+
+  .nav {
+    ul {
+      list-style: none;
+      display: flex !important;
+      flex-direction: row !important;
+      gap: 0.5rem;
+
+      .link {
+        color: rgb(22, 108, 189);
+        text-decoration: none;
+        padding: 0.5rem 0.3rem;
+        border-radius: 0.5rem;
+
+        background-color: rgba(22, 108, 189, 0.1);
+
+        backdrop-filter: blur(4px); /* apply the blur */
+        -webkit-backdrop-filter: blur(4px); /* Safari support */
+
+        transition: background-color 0.3s ease;
+
+        &:hover{
+            background-color: rgba(6, 116, 219, 0.605);
+            color: beige;
+        }
+        &:active{
+            background-color: rgba(40, 197, 87, 0.605);
+            color: beige;
+        }
+       
+      }
+    }
+  }
+}
