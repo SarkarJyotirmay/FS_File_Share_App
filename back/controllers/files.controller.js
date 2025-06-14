@@ -81,11 +81,11 @@ const getAllFiles = async(req, res)=>{
 
 
 
-const controllers = {
+const fileControllers = {
   uploadFile,
   shareFile, 
   getFile,
   getAllFiles
 };
 
-export default controllers;
+export default fileControllers;

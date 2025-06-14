@@ -1,20 +1,20 @@
 import express from "express";
-import controllers from "../controllers/files.controller.js";
+import fileControllers from "../controllers/files.controller.js";
 import uploader from "../middlewares/uploader.middleware.js";
 
-const router = express.Router();
+const FileRouter = express.Router();
 
-router.post(
+FileRouter.post(
   "/api/v1/fileshare/upload",
   uploader.single("uploaded-file"),
-  controllers.uploadFile
+  fileControllers.uploadFile
 );
 
-router.post("/api/v1/fileshare/share", controllers.shareFile)
+FileRouter.post("/api/v1/fileshare/share", fileControllers.shareFile)
 
-router.get("/getfile/:_id", controllers.getFile)
+FileRouter.get("/getfile/:_id", fileControllers.getFile)
 
 // ! list all files from db
-router.get("/api/v1/fileshare/list", controllers.getAllFiles)
+FileRouter.get("/api/v1/fileshare/list", fileControllers.getAllFiles)
 
-export default router;
+export default FileRouter;
