@@ -36,7 +36,7 @@ const login = async (req, res) => {
         message: "No user found",
       });
     }
-
+    
     const isPasswordMatched = user.password === req.body.password;
     if (!isPasswordMatched) {
       return res.status(401).json({

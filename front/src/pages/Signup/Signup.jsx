@@ -30,7 +30,7 @@ const Signup = () => {
       );
       console.log(response.data);
       navigate("/login");
-      setFormData(initialState)
+      setFormData(initialState);
     } catch (error) {
       console.log("Error in sign up", error);
     }
@@ -80,8 +80,10 @@ const Signup = () => {
           <button type="submit" className={styles["submit-btn"]}>
             Sign Up
           </button>
+          <p>
+            Already have an account ? <Link to={"/login"}>Login</Link>
+          </p>
         </form>
-        <p>Already have an account ? <Link to={"/login"}>Login</Link></p>
       </div>
     </div>
   );
