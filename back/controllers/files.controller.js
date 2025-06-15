@@ -60,6 +60,7 @@ const getFile = async(req, res)=>{
     res.download(file.path)
 }
 
+// ! list api
 const getAllFiles = async(req, res)=>{
   try {
     const allFiles =  await FileModel.find()

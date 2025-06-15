@@ -12,7 +12,7 @@ const app = express();
 // DB connection
 // File DB Connection
 mongoose
-  .connect(process.env.DB_CONNECTION_STRING)
+  .connect(process.env.ATLAS_CONNECTION_STRING)
   .then(() => console.log("DB connected successfully"))
   .catch((err) => console.log("Error in connecting DB", err));
 

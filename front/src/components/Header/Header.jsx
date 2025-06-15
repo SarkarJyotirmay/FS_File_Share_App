@@ -14,6 +14,7 @@ const Header = () => {
           <li><Link className={styles.link} to={"/files"}>Files</Link></li>
           <li><Link className={styles.link} to={"/contact"}>Contact Us</Link></li>
           <li><Link className={styles.link} to={"/about"}>About Us</Link></li>
+          <li><Link className={styles.link} to={"/signup"}>Sign Up</Link></li>
         </ul>
       </nav>
     </div>

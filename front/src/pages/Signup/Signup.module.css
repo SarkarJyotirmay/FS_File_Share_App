@@ -1,0 +1,76 @@
+/* Background */
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #cfe9ff, #ffffff, #dbeeff);
+  padding: 20px;
+}
+
+/* Card */
+.signup-card {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Title */
+.signup-title {
+  font-size: 28px;
+  color: #1d4ed8;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #1d4ed8;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  color: #333;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+  border: 2px solid #60a5fa;
+}
+
+/* Button */
+.submit-btn {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #1e40af;
+}
